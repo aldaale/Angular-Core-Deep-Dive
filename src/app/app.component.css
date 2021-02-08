@@ -1,0 +1,10 @@
+.top-menu {
+    background-color: blue;
+    /* height: 4rem; */
+}
+
+.top-menu img {
+    max-width: 10%;
+    padding: 3px;
+    margin-top: 3px;
+}
