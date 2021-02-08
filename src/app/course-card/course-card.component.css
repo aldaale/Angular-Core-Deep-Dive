@@ -42,6 +42,7 @@
     margin: 0 auto;
     margin-top: 15px;
     user-select: none;
+    padding: 0.7rem;
   }
   
   .course-card .course-description input {
@@ -50,4 +51,12 @@
   
   .course-card.beginner {
     background: lightsalmon;
+  }
+
+  button {
+      background-color:#196FE5;
+      color: white;
+      border: none;
+      padding: 0.5rem;
+      border-radius: 3mm;
   }

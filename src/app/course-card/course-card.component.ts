@@ -1,6 +1,6 @@
-import { Component, Input, OnInit } from '@angular/core';
-import {COURSES } from '../../db-data';
-import { Course } from '../model/course';
+import { Component,  EventEmitter, Input, OnInit, Output} from '@angular/core';
+import {Course} from '../model/course';
+// import {CoursesService} from '../courses.service';
 
 @Component({
   selector: 'app-course-card',
@@ -11,6 +11,9 @@ export class CourseCardComponent implements OnInit {
 
   @Input()
   course:Course;
+
+  @Output()
+  courseSelected = new EventEmitter<Course>();
   
   constructor() { }
 
@@ -18,7 +21,8 @@ export class CourseCardComponent implements OnInit {
   }
 
   onCourseViewed() {
-    console.log('clicklcik');
+    console.log('course card component clicked....');
+    this.courseSelected.emit(this.course);
   }
 
 }
