@@ -35,6 +35,7 @@
   .course-card .course-title {
     font-size: 27px;
     font-weight: bold;
+    margin-bottom: 0.8rem;
   }
   
   .course-card .course-description {
