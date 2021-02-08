@@ -1,10 +1,12 @@
 <div class="course-card">
     <div class="course-title">
-      Angular Core Deep Dive
+      {{course.description}}
     </div>
-    <img  width="300" src="https://angular-academy.s3.amazonaws.com/main-logo/main-page-logo-small-hat.png" alt="Angular Logo">
+    <img [src]="course.iconUrl" alt="Angular-logo" width="300">
   
     <div class="course-description">
-      A detailed walk-through of the most important part of Angular - Core and Common Modules
+     {{course.longDescription}}
     </div>
+
+    <button (clickb)="onCourseViewed()">View Course</button>
   </div>
